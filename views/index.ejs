@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogs</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="index pt-5">
+
+  <div class="container border border-1 p-0" >
+    <div class="card-header text-center">
+      <h4> Personal Blog</h4>
+    </div>
+    <div class="row p-5">
+      <form class="row g-3 col" action="/blogForm" method="post" >
+        <div class="col-md-6">
+          <label for="title">Title</label>
+          <input type="text" class="form-control" name="title" placeholder="Enter Title">
+        </div>
+        <div class="col-md-6">
+          <label for="content">Content</label>
+          <input type="text" class="form-control" name="content" placeholder="Enter Content">
+        </div>
+       
+        <div class="col py-5 text-center">
+          <button type="submit" class="btn btn-primary mx-2">Add Blog</button>
+          <button type="submit" class="btn btn-primary mx-2"><a href="/views" class="text-white">Blog Card</a></button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
